@@ -22,11 +22,11 @@ export const ArrowButton: React.FC<ArrowButtonProps> = ({
   ...props
 }) => {
   const baseClasses = 
-    'group relative inline-flex items-center justify-between font-sans uppercase font-medium text-[13px] tracking-button transition-all duration-200 outline-none select-none active:scale-[0.985] cursor-pointer';
+    'group relative inline-flex items-center justify-between font-sans uppercase font-medium text-[10px] tracking-button transition-all duration-200 outline-none select-none active:scale-[0.985] cursor-pointer';
 
   const variantClasses: Record<ButtonVariant, string> = {
     white: 
-      'bg-white text-[#090909] hover:bg-neutral-100 min-h-[45px] sm:min-h-[45px] px-6 sm:px-8 rounded-[2px] min-w-[220px] sm:min-w-[270px] focus-visible:ring-2 focus-visible:ring-[#052DC8] focus-visible:ring-offset-2',
+      'bg-white text-[#090909] hover:bg-neutral-100 min-h-[35px] sm:min-h-[35px] px-6 sm:px-8 rounded-[2px] min-w-[220px] sm:min-w-[270px] focus-visible:ring-2 focus-visible:ring-[#052DC8] focus-visible:ring-offset-2',
     outlineLight: 
       'bg-transparent text-white border border-white hover:bg-white hover:text-[#090909] min-h-[54px] sm:min-h-[66px] px-6 sm:px-8 rounded-[2px] min-w-[220px] sm:min-w-[270px] focus-visible:ring-2 focus-visible:ring-[#052DC8] focus-visible:ring-offset-2',
     outlineDark: 

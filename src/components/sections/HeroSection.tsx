@@ -138,12 +138,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Top Eyebrow & Display Headline Block */}
         <div className="max-w-[920px]">
           {/* Introductory Eyebrow */}
-          <div className="text-[11px] sm:text-[12px] lg:text-[clamp(0.75rem,1.5vh,15px)] font-medium tracking-editorial uppercase text-white/70 whitespace-pre-line leading-relaxed mb-[clamp(1.25rem,5vh,3rem)]">
+          <div className="text-[10px] sm:text-[10px] lg:text-[clamp(0.5rem,1.5vh,15px)] font-medium tracking-editorial uppercase text-white/70 whitespace-pre-line leading-relaxed mb-[clamp(1.25rem,5vh,3rem)] mt-5">
             {HERO_DATA.eyebrow}
           </div>
 
           {/* Main Two-Line Display Heading */}
-          <h1 className="text-white text-[2.75rem] sm:text-[3.5rem] lg:text-[clamp(4.5rem,min(9vw,12.5vh),120px)] font-light leading-[0.94] tracking-tight-display whitespace-pre-line break-words mb-[clamp(1rem,2.8vh,2rem)] drop-shadow-xs">
+          <h1 className="text-white text-[4rem] sm:text-[4rem] lg:text-[clamp(4.5rem,min(9vw,12.5vh),120px)] font-bold leading-[0.94] tracking-tight-display whitespace-pre-line break-words mb-[clamp(1rem,2.8vh,2rem)] drop-shadow-xs">
             {activeSlide.headline}
           </h1>
 
@@ -153,12 +153,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </p>
 
           {/* CTA Buttons Row */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
             <ArrowButton
               id="hero-cta-work"
               variant="white"
               onClick={onViewWork}
-              className="!min-h-[44px] sm:!min-h-[52px]"
+              className="!min-h-[40px] sm:!min-h-[40px] !min-w-0 !px-5 sm:!px-6 !w-[195px] sm:!w-[225px]"
             >
               VIEW OUR WORK
             </ArrowButton>
@@ -167,7 +167,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               id="hero-cta-project"
               variant="outlineLight"
               onClick={onStartProject}
-              className="!min-h-[44px] sm:!min-h-[52px]"
+              className="!min-h-[40px] sm:!min-h-[40px] !min-w-0 !px-5 sm:!px-6 !w-[195px] sm:!w-[225px]"
             >
               START A PROJECT
             </ArrowButton>
