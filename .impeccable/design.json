@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-06T20:16:48Z",
+  "title": "Design System: Aliyah Estate",
+  "extensions": {
+    "colorMeta": {
+      "ground": { "role": "neutral", "displayName": "Parchment Ground", "canonical": "#FDFBF7", "tonalRamp": ["#141414", "#3A3733", "#615C55", "#948C80", "#C9C0B2", "#E8E2D8", "#F5F1EB", "#FDFBF7"] },
+      "surface": { "role": "neutral", "displayName": "Pure Surface", "canonical": "#FFFFFF", "tonalRamp": ["#141414", "#403D39", "#6E6A62", "#A19B90", "#D3CDC2", "#EDEAE3", "#F7F5F1", "#FFFFFF"] },
+      "surface-sunken": { "role": "neutral", "displayName": "Sable Sand", "canonical": "#F5F1EB", "tonalRamp": ["#1C1712", "#3D362C", "#5F5546", "#847763", "#AB9C82", "#CBBFA9", "#E1D8C7", "#F5F1EB"] },
+      "border": { "role": "neutral", "displayName": "Hairline Border", "canonical": "#E8E2D8", "tonalRamp": ["#25201A", "#463F34", "#6A6152", "#918673", "#B7AA95", "#D3C7B2", "#E1D6C4", "#E8E2D8"] },
+      "border-strong": { "role": "neutral", "displayName": "Border Strong", "canonical": "#D8CDBC", "tonalRamp": ["#25200F", "#473D25", "#6C5F3E", "#93835A", "#B8A47A", "#CDBB9C", "#D6C6AE", "#D8CDBC"] },
+      "ink": { "role": "primary", "displayName": "Ink", "canonical": "#141414", "tonalRamp": ["#0A0A0A", "#141414", "#2B2B2B", "#484848", "#6D6D6D", "#989898", "#C7C7C7", "#F0F0F0"] },
+      "muted": { "role": "neutral", "displayName": "Muted", "canonical": "#5A5550", "tonalRamp": ["#161413", "#2E2B28", "#48433E", "#5A5550", "#7C766E", "#A39D93", "#CEC7BB", "#EDE8DF"] },
+      "accent": { "role": "secondary", "displayName": "Weathered Bronze", "canonical": "#856738", "tonalRamp": ["#1D1608", "#3C2E12", "#5C481D", "#856738", "#A9895C", "#C7AD87", "#DFCFB6", "#F1E9DC"] },
+      "accent-fill": { "role": "secondary", "displayName": "Champagne Gold", "canonical": "#C5A880", "tonalRamp": ["#2B2113", "#4E3D22", "#725B32", "#997B4B", "#C5A880", "#D8C3A2", "#E7DAC4", "#F5EEE2"] },
+      "ink-inverse": { "role": "neutral", "displayName": "Parchment (on dark)", "canonical": "#FDFBF7", "tonalRamp": ["#141414", "#3A3733", "#615C55", "#948C80", "#C9C0B2", "#E8E2D8", "#F5F1EB", "#FDFBF7"] },
+      "muted-inverse": { "role": "neutral", "displayName": "Muted Inverse", "canonical": "#A0988E", "tonalRamp": ["#1D1B18", "#3B3730", "#5B554A", "#7D7567", "#A0988E", "#BFB9AF", "#DAD6D0", "#F0EEEA"] },
+      "danger": { "role": "error", "displayName": "Danger", "canonical": "#B3261E", "tonalRamp": ["#2B0A08", "#4F1310", "#791D18", "#A62620", "#B3261E", "#D65A52", "#EC9A94", "#FBEAE9"] },
+      "danger-fill": { "role": "error", "displayName": "Danger Fill", "canonical": "#FBEAE9", "tonalRamp": ["#2B0A08", "#4F1310", "#791D18", "#A62620", "#C24A42", "#E28A83", "#F2C0BB", "#FBEAE9"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero H1 only; one italic word for editorial emphasis." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings (SectionHeading title)." },
+      "title": { "displayName": "Title", "purpose": "Card titles, form headings, component-level headings." },
+      "body": { "displayName": "Body", "purpose": "Paragraph copy, descriptions, form field text." },
+      "label": { "displayName": "Label", "purpose": "Uppercase eyebrows, nav sub-label, badge text, footer headers." }
+    },
+    "shadows": [
+      { "name": "ambient", "value": "0 1px 2px rgba(0,0,0,0.05)", "purpose": "Scrolled header band and resting buttons — barely-there separation." },
+      { "name": "floating", "value": "0 25px 50px -12px rgba(0,0,0,0.35)", "purpose": "Overlays that leave normal page flow: hero search card, mobile filter drawer." }
+    ],
+    "motion": [
+      { "name": "ease-editorial", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The one shared easing: hero entrance, scroll reveals, nav underline, page transitions." },
+      { "name": "duration-standard", "value": "300ms", "purpose": "Default hover/focus color and border transitions." },
+      { "name": "duration-image", "value": "500ms", "purpose": "Property card image scale-up on hover." },
+      { "name": "duration-reveal", "value": "1100ms", "purpose": "Scroll-triggered section reveal (opacity + 32px rise), once per section — deliberately slow and legible." },
+      { "name": "duration-transition", "value": "600ms", "purpose": "Page-entry fade + 20px rise on route change." },
+      { "name": "duration-hover-lift", "value": "500ms", "purpose": "Transform-only -8px hover lift on interactive cards." },
+      { "name": "stagger-tight", "value": "120ms", "purpose": "Per-item delay for a real grouping (e.g. the services grid) revealing together." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Default call-to-action: Ink fill, square edges, trailing icon that translates on hover.",
+      "html": "<button class=\"ds-btn-primary\">Explore Properties <span class=\"ds-btn-icon\">→</span></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #141414; color: #FDFBF7; border: 1px solid #141414; padding: 14px 24px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.02em; border-radius: 0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: background 0.3s, color 0.3s; cursor: pointer; } .ds-btn-primary:hover { background: rgba(20,20,20,0.85); } .ds-btn-primary:focus-visible { outline: 2px solid #856738; outline-offset: 2px; } .ds-btn-icon { display: inline-flex; transition: transform 0.3s; } .ds-btn-primary:hover .ds-btn-icon { transform: translateX(4px); }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action: transparent with Ink border, fills solid on hover.",
+      "html": "<button class=\"ds-btn-outline\">Contact Us</button>",
+      "css": ".ds-btn-outline { background: transparent; color: #141414; border: 1px solid #141414; padding: 14px 24px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 14px; font-weight: 500; border-radius: 0; transition: background 0.3s, color 0.3s; cursor: pointer; } .ds-btn-outline:hover { background: #141414; color: #FDFBF7; } .ds-btn-outline:focus-visible { outline: 2px solid #856738; outline-offset: 2px; }"
+    },
+    {
+      "name": "Featured Badge",
+      "kind": "chip",
+      "refersTo": "badge-featured",
+      "description": "Square, uppercase, letter-spaced label chip used on property cards.",
+      "html": "<span class=\"ds-badge-featured\">Featured</span>",
+      "css": ".ds-badge-featured { display: inline-flex; align-items: center; padding: 4px 10px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; background: #C5A880; color: #141414; border: 1px solid #856738; border-radius: 0; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Square-edged form field with Sable Sand rest fill and bronze focus border.",
+      "html": "<label class=\"ds-label\" for=\"ds-demo-input\">Full name *</label><input id=\"ds-demo-input\" class=\"ds-input\" type=\"text\" placeholder=\"e.g. Eleanor Vance\" />",
+      "css": ".ds-label { display: block; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 14px; font-weight: 600; color: #141414; margin-bottom: 4px; } .ds-input { width: 100%; background: #F5F1EB; border: 1px solid #E8E2D8; padding: 10px 14px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 14px; color: #141414; border-radius: 0; transition: border-color 0.3s; } .ds-input:focus { outline: none; border-color: #856738; } .ds-input::placeholder { color: #A0988E; }"
+    },
+    {
+      "name": "Property Card",
+      "kind": "card",
+      "refersTo": "card-property",
+      "description": "Signature component: full-bleed 4:3 image with hover zoom and scrim, floating badges and arrow mark, price overlaid in Display serif, spec row below.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-media\"><div class=\"ds-card-scrim\"></div><span class=\"ds-card-badge\">For Sale</span><span class=\"ds-card-arrow\">↗</span><span class=\"ds-card-price\">MAD 12,500,000</span></div><div class=\"ds-card-body\"><div class=\"ds-card-location\">Palmeraie, Marrakech</div><h3 class=\"ds-card-title\">Villa Belle Époque</h3><div class=\"ds-card-specs\"><span>5 beds</span><span>6 baths</span><span>620 m²</span></div></div></article>",
+      "css": ".ds-card { display: flex; flex-direction: column; background: #FFFFFF; border: 1px solid #E8E2D8; border-radius: 0; overflow: hidden; transition: border-color 0.3s; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; } .ds-card:hover { border-color: #D8CDBC; } .ds-card-media { position: relative; aspect-ratio: 4/3; background: linear-gradient(135deg, #6b5836, #3a3025); } .ds-card-scrim { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.5), transparent 60%, rgba(0,0,0,0.1)); } .ds-card-badge { position: absolute; top: 14px; left: 14px; background: #141414; color: #FDFBF7; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 10px; } .ds-card-arrow { position: absolute; top: 14px; right: 14px; width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center; border-radius: 9999px; background: rgba(253,251,247,0.9); color: #141414; } .ds-card-price { position: absolute; bottom: 14px; left: 14px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 24px; font-weight: 500; color: #fff; } .ds-card-body { padding: 24px; } .ds-card-location { font-size: 14px; color: #5A5550; margin-bottom: 8px; } .ds-card-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; font-weight: 400; color: #141414; margin: 0 0 20px; } .ds-card-specs { display: flex; gap: 16px; padding-top: 16px; border-top: 1px solid #E8E2D8; font-size: 12px; color: #5A5550; }"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "description": "Eyebrow label + serif headline + sans subtitle, the recurring section-intro pattern.",
+      "html": "<div class=\"ds-heading\"><span class=\"ds-heading-label\">Bespoke Services</span><h2 class=\"ds-heading-title\">Private Client Solutions</h2><p class=\"ds-heading-subtitle\">Tailored real estate advisory delivered with utmost discretion.</p></div>",
+      "css": ".ds-heading { display: flex; flex-direction: column; margin-bottom: 40px; } .ds-heading-label { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #856738; font-weight: 600; margin-bottom: 12px; } .ds-heading-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.25rem, 2.5vw, 2.25rem); font-weight: 400; color: #141414; line-height: 1.15; letter-spacing: -0.015em; margin: 0; } .ds-heading-subtitle { margin-top: 16px; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; font-size: 16px; color: #5A5550; max-width: 42em; line-height: 1.6; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Editorial Estate",
+    "overview": "Aliyah Estate reads like a glossy real-estate magazine spread, not a listings portal. Every surface is square-edged and photo-forward: full-bleed property imagery, generous whitespace, and serif display type doing the persuading while the interface itself recedes. The palette is dominated by near-black \"ink\" — primary buttons, badges, the footer band — with a muted bronze/gold accent (#856738/#C5A880) that appears only in small, deliberate doses: an icon, a link, a hover state, an eyebrow label. Gold is a wax seal, not a wash.\n\nThe system deliberately rejects the generic real-estate-portal look: no rounded pill cards, no blue hyperlinks, no dense MLS-style data grids, no stock-carousel sameness. Corners stay sharp everywhere except the handful of circular icon affordances (avatars, carousel dots, close buttons) that exist purely as touch targets. Depth comes from hairline borders and alternating background bands, not drop shadows — shadow is reserved for things that genuinely float above the page (a sticky search bar, a mobile filter drawer), so its rare appearance still reads as an interruption worth noticing.",
+    "keyCharacteristics": [
+      "Serif display headlines (Cormorant Garamond) paired with an italicized, light-weight word for editorial emphasis",
+      "Near-black \"ink\" as the dominant primary color; bronze/gold accent used on a strict minority of any screen",
+      "Square edges everywhere except icon-only circles",
+      "Flat by default; shadow appears only on overlays that float above page flow",
+      "Uppercase, letter-spaced labels (0.1em) as section eyebrows and micro-navigation"
+    ],
+    "rules": [
+      { "name": "The One Voice Rule", "body": "The bronze/gold accent (#856738/#C5A880) never fills a large surface. It marks icons, links, labels, badges, and hover states — always a minority of any given screen. Ink carries the visual weight instead.", "section": "colors" },
+      { "name": "No New Hex Rule", "body": "Every color used in the UI resolves to a token in this palette. A new arbitrary hex value is never introduced ad hoc — add a token here first.", "section": "colors" },
+      { "name": "The Editorial Italic Rule", "body": "Within a serif display headline, exactly one word or phrase is set in italic, lighter weight for emphasis — never the whole headline, never more than one phrase.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces are flat at rest. A shadow only appears on something that is genuinely floating above the page — never on a card or button sitting in normal flow. A hover lift (transform only, no shadow) is not an exception to this.", "section": "elevation" },
+      { "name": "The Accent Draws In", "body": "The one recurring motion motif: a thin accent-colored rule scales in from the left, once, wherever an eyebrow label or the active nav link needs an underline. Reused everywhere instead of inventing a new effect per surface.", "section": "elevation" },
+      { "name": "The Sharp Edge Rule", "body": "Border-radius is 0 on every content surface (button, card, input, badge, panel). rounded-full is used only for icon-sized circular controls — never for cards, buttons with text, or images.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do keep every content surface square-edged (0px radius) — buttons, cards, inputs, badges, panels.",
+      "Do reserve rounded-full strictly for icon-only circles (arrow marks, dots, close buttons, count pills).",
+      "Do treat the bronze/gold accent as a rare mark — icons, links, labels, one emphasized CTA — never a large fill (The One Voice Rule).",
+      "Do alternate section backgrounds between Parchment Ground and Sable Sand, divided by hairline borders, to build rhythm without shadow.",
+      "Do set exactly one word or phrase in italic serif within a display headline for emphasis (The Editorial Italic Rule).",
+      "Do use uppercase, 0.1em-tracked labels as section eyebrows and micro-navigation text.",
+      "Do resolve every UI color to an existing token; add a new token before reaching for a new hex value."
+    ],
+    "donts": [
+      "Don't add box-shadow to a card or button sitting in normal page flow — shadow is reserved for elements that float above the page (drawers, dropdowns, the sticky search bar).",
+      "Don't fill a large surface with the accent gold; it reads as decoration, not signal, at that scale.",
+      "Don't round the corners of a card, button, or input — that's the generic real-estate-portal look this system explicitly rejects.",
+      "Don't reach for blue links, dense MLS-style data grids, or stock-carousel sameness — the incumbent anti-reference this system was built against."
+    ]
+  }
+}

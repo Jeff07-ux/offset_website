@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "plus jakarta sans",
+        "createdAt": "2026-09-09T14:30:29.489Z",
+        "reason": "pre-existing site-wide typeface wired into index.html Google Fonts import before this session; matches the provided design mockups (desgin_sheets/website*.png) headline/body type — not something introduced by or in scope for the hero design-matching task"
+      }
+    ]
+  }
+}

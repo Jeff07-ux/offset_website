@@ -1,0 +1,6 @@
+{
+  "name": "OFFSET — Real Estate Visual & Digital Studio",
+  "description": "OFFSET creates architectural photography, cinematic property films, personal-brand content, and premium digital experiences for luxury villas, realtors, and hospitality brands.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
