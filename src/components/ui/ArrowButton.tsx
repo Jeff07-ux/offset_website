@@ -43,7 +43,7 @@ export const ArrowButton: React.FC<ArrowButtonProps> = ({
 
   const content = (
     <>
-      <span className="mr-4 whitespace-nowrap">{children}</span>
+      <span className="mr-2 sm:mr-4 whitespace-nowrap">{children}</span>
       <ArrowRight 
         className={`w-4 h-4 transition-transform duration-200 group-hover:translate-x-1.5 shrink-0 ${arrowClassName}`} 
         strokeWidth={1.5}

@@ -153,12 +153,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </p>
 
           {/* CTA Buttons Row */}
-          <div className="flex flex-col sm:flex-row  items-start sm:items-center gap-4 sm:gap-6">
+          <div className="flex flex-row flex-wrap items-start sm:items-center gap-3 sm:gap-6">
             <ArrowButton
               id="hero-cta-work"
               variant="white"
               onClick={onViewWork}
-              className="!min-h-[40px] sm:!min-h-[40px] !min-w-0 !px-5 sm:!px-6 !w-[195px] sm:!w-[225px]"
+              className="!min-h-[40px] sm:!min-h-[40px] !min-w-0 !px-4 sm:!px-5 !w-[165px] sm:!w-[190px]"
             >
               VIEW OUR WORK
             </ArrowButton>
@@ -167,7 +167,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               id="hero-cta-project"
               variant="outlineLight"
               onClick={onStartProject}
-              className="!min-h-[40px] sm:!min-h-[40px] !min-w-0 !px-5 sm:!px-6 !w-[195px] sm:!w-[225px]"
+              className="!min-h-[40px] sm:!min-h-[40px] !min-w-0 !px-4 sm:!px-5 !w-[165px] sm:!w-[190px]"
             >
               START A PROJECT
             </ArrowButton>
