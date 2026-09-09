@@ -1,34 +1,6 @@
 import React from 'react';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
-
-export interface Metadata {
-  title?: string;
-  description?: string;
-  keywords?: string[];
-  authors?: { name: string }[];
-  creator?: string;
-  openGraph?: {
-    type?: string;
-    locale?: string;
-    url?: string;
-    title?: string;
-    description?: string;
-    siteName?: string;
-    images?: Array<{ url: string; width?: number; height?: number; alt?: string }>;
-  };
-  twitter?: {
-    card?: string;
-    title?: string;
-    description?: string;
-    images?: string[];
-  };
-}
-
-export interface Viewport {
-  themeColor?: string;
-  width?: string;
-  initialScale?: number;
-}
 
 export const metadata: Metadata = {
   title: 'OFFSET — Real Estate Photography, Film & Digital Experiences',

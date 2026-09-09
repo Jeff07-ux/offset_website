@@ -22,7 +22,7 @@ export const ArrowButton: React.FC<ArrowButtonProps> = ({
   ...props
 }) => {
   const baseClasses = 
-    'group relative inline-flex items-center justify-between font-sans uppercase font-medium text-[10px] tracking-button transition-all duration-200 outline-none select-none active:scale-[0.985] cursor-pointer';
+    'group relative inline-flex items-center justify-between font-sans uppercase font-bold text-[10px] tracking-button transition-all duration-200 outline-none select-none active:scale-[0.985] cursor-pointer';
 
   const variantClasses: Record<ButtonVariant, string> = {
     white: 

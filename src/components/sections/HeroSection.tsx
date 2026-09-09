@@ -143,7 +143,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
           {/* Main Two-Line Display Heading */}
-          <h1 className="text-white text-[4rem] sm:text-[4rem] lg:text-[clamp(4.5rem,min(9vw,12.5vh),120px)] font-bold leading-[0.94] tracking-tight-display whitespace-pre-line break-words mb-[clamp(1rem,2.8vh,2rem)] drop-shadow-xs">
+          <h1 className="text-white text-[4rem] sm:text-[4rem] lg:text-[clamp(4.5rem,min(9vw,12.5vh),120px)] font-light leading-[0.94] tracking-tight-display whitespace-pre-line break-words mb-[clamp(1rem,2.8vh,2rem)] drop-shadow-xs">
             {activeSlide.headline}
           </h1>
 
@@ -153,7 +153,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </p>
 
           {/* CTA Buttons Row */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+          <div className="flex flex-col sm:flex-row  items-start sm:items-center gap-4 sm:gap-6">
             <ArrowButton
               id="hero-cta-work"
               variant="white"
