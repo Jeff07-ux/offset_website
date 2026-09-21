@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aliyah Prestige</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="m-0 bg-[#f5efe6] font-['Inter',sans-serif] antialiased">
+
+  <!-- SECTION: home-hero  (reference: refs/home-hero.png) -->
+  <!-- Hero photo derived from refs/home-hero.png with text removed (tools/make-hero-bg.mjs). Replace assets/hero-bg.png with the original photo when available. -->
+  <section id="home-hero" class="relative h-[366px] w-full overflow-hidden border-x-2 border-t border-[#202020] bg-[#1a0d05] text-white">
+    <img src="assets/hero-bg.png" alt="" class="absolute inset-0 size-full object-fill">
+
+    <header class="absolute inset-x-0 top-0 h-[52px]">
+      <a href="#home-hero" class="absolute left-[78px] top-[5px] block w-[132px] whitespace-nowrap text-center">
+        <svg class="mx-auto block size-[12px] text-[#e8d7b0]" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width=".8" aria-hidden="true"><path d="M6 0.5 7.6 4.4 11.5 6 7.6 7.6 6 11.5 4.4 7.6 0.5 6 4.4 4.4Z"/><circle cx="6" cy="6" r="1.6"/></svg>
+        <span class="mt-[3px] block font-['Cormorant_Garamond',serif] text-[13px] font-normal leading-[14px] tracking-[0.1em] text-[#f3ece0]">ALIYAH PRESTIGE</span>
+        <span class="mt-[4px] block text-[5px] leading-[6px] tracking-[0.14em] text-[#e6d8c0]">PRIVATE CONCIERGE MARRAKECH</span>
+      </a>
+      <nav aria-label="Main" class="text-[6px] leading-[8px] tracking-[0.12em] text-[#f5eee4]">
+        <a href="#home-hero" class="absolute left-[278px] top-[22px]">HOME</a>
+        <a href="#home-hero" class="absolute left-[318px] top-[22px] h-[8px] w-[58px]"><span class="absolute left-0">ABOUT</span><span class="absolute left-[3px]">EXPERIENCES</span></a>
+        <a href="#services-section" class="absolute left-[398px] top-[22px]">SERVICES</a>
+        <a href="#home-hero" class="absolute left-[459px] top-[22px]">CONTACT</a>
+        <a href="#home-hero" class="absolute left-[518px] top-[22px]">BLOG</a>
+      </nav>
+      <a href="#home-hero" class="absolute left-[708px] top-[14px] flex h-[24px] w-[85px] items-center justify-center gap-[8px] rounded-full border border-white/55 text-[6px] font-medium leading-[8px] tracking-[0.12em] text-[#f5eee4]">ENQUIRE NOW <span aria-hidden="true">→</span></a>
+    </header>
+
+    <div class="absolute left-[78px] top-[84px]">
+      <p class="m-0 text-[5px] leading-[6px] tracking-[0.2em] text-[#e6d8c0]">SINCE 1986</p>
+      <p class="m-0 mt-[7px] font-['Cormorant_Garamond',serif] text-[23px] font-light leading-[26px] tracking-[0.115em] text-[#f5eee4]">ALIYAH PRESTIGE</p>
+      <p class="m-0 mt-[7px] text-[8px] leading-[10px] tracking-[0.48em] text-[#eadfcc]">PRIVATE CONCIERGE MARRAKECH</p>
+      <h1 class="m-0 mt-[17px] font-['Cormorant_Garamond',serif] text-[30.6px] font-normal leading-[34px] tracking-[0] text-[#f7f1e6]">A WORLD OF PRIVILEGE,<br>ROOTED IN EXCELLENCE</h1>
+      <p class="m-0 mt-[8px] text-[8.75px] font-light leading-[14px] text-[#f0e8da]">Bespoke experiences of rare elegance in Marrakech and beyond.<br>With discretion, personalization and timeless sophistication,<br>we turn your vision into unforgettable moments.</p>
+      <a href="#services-section" class="mt-[17px] flex h-[24px] w-[102px] items-center justify-center gap-[10px] rounded-full border border-white/60 text-[6px] font-medium leading-[8px] tracking-[0.12em] text-[#f5eee4]">ENQUIRE NOW <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- SECTION: services-section  (reference: refs/services-section.png) -->
+  <section id="services-section">
+  </section>
+
+</body>
+</html>

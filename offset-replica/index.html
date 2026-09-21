@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OFFSET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="m-0 bg-white font-['Hanken_Grotesk',sans-serif] antialiased">
+
+  <!-- SECTION: hero  (reference: refs/sheet-1.png, 1672x941). Desktop >=1100px = the comp scaled with the viewport; below = stacked layout. -->
+  <!-- Background photo derived from the reference with UI erased (tools/make-hero-bg.mjs). Replace assets/hero-bg.png with the original photo/video when available. -->
+  <section id="hero" class="relative isolate bg-[#386f96] text-white desk:h-dvh desk:w-full">
+    <img src="assets/hero-bg.png" alt="" class="absolute inset-0 -z-20 size-full object-cover object-[64%_center]">
+    <div class="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(8,18,28,0)_30%,rgba(8,18,28,.6)_100%)] desk:hidden"></div>
+
+    <div class="relative flex min-h-[max(100dvh,620px)] flex-col px-5 pb-6 pt-5 sm:px-10 short:min-h-dvh short:pb-3 short:pt-3 desk:contents">
+      <header class="relative z-10 flex items-center justify-between desk:contents">
+        <input id="menu" type="checkbox" class="peer sr-only" aria-label="Toggle menu">
+        <a href="#hero" class="font-['Jost',sans-serif] text-[26px] font-normal leading-none tracking-[0.3em] text-[#181c1c] desk:absolute desk:left-[3.3125rem] desk:top-[1.8125rem] desk:text-[2.5rem] desk:leading-[3.75rem] desk:tracking-[0.335em]">OFFSET</a>
+        <label for="menu" class="relative block h-[22px] w-[34px] shrink-0 cursor-pointer peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-4 peer-focus-visible:outline-[#181c1c] desk:absolute desk:right-[3.4375rem] desk:top-[2.9375rem]" role="button" aria-label="Menu">
+          <span class="absolute left-0 top-[2px] h-[2px] w-[33px] bg-[#1a1e20] desk:top-[0.125rem] desk:w-[2.0625rem] desk:h-[0.125rem]"></span>
+          <span class="absolute left-0 top-[10px] h-[2px] w-[33px] bg-[#1a1e20] desk:top-[0.625rem] desk:w-[2.0625rem] desk:h-[0.125rem]"></span>
+          <span class="absolute left-0 top-[19px] h-[2px] w-[33px] bg-[#1a1e20] desk:top-[1.1875rem] desk:w-[2.0625rem] desk:h-[0.125rem]"></span>
+        </label>
+        <nav aria-label="Main" class="absolute inset-x-0 top-full mt-3 hidden flex-col z-20 rounded-[4px] bg-white px-5 py-3 shadow-lg peer-checked:flex desk:peer-checked:contents desk:contents">
+          <a href="#work" class="block py-1 text-[15px] leading-[20px] tracking-[0.12em] text-[#152328] desk:absolute desk:top-[3rem] desk:py-0 desk:text-[max(11px,0.9375rem)] desk:font-normal desk:leading-[1.25rem] desk:tracking-[0.175em] desk:left-[calc(50%_-_16.3125rem)]">WORK</a>
+          <a href="#services" class="block py-1 text-[15px] leading-[20px] tracking-[0.12em] text-[#152328] desk:absolute desk:top-[3rem] desk:py-0 desk:text-[max(11px,0.9375rem)] desk:font-normal desk:leading-[1.25rem] desk:tracking-[0.175em] desk:left-[calc(50%_-_8.6875rem)]">SERVICES</a>
+          <a href="#about" class="block py-1 text-[15px] leading-[20px] tracking-[0.12em] text-[#152328] desk:absolute desk:top-[3rem] desk:py-0 desk:text-[max(11px,0.9375rem)] desk:font-normal desk:leading-[1.25rem] desk:tracking-[0.175em] desk:left-[calc(50%_+_1.125rem)]">ABOUT</a>
+          <a href="#contact" class="block py-1 text-[15px] leading-[20px] tracking-[0.12em] text-[#152328] desk:absolute desk:top-[3rem] desk:py-0 desk:text-[max(11px,0.9375rem)] desk:font-normal desk:leading-[1.25rem] desk:tracking-[0.175em] desk:left-[calc(50%_+_9.5rem)]">CONTACT</a>
+        </nav>
+      </header>
+
+      <p class="hidden m-0 font-normal text-[#5a5e62] desk:block desk:absolute desk:right-[5.05625rem] desk:top-[6.125rem] desk:leading-[1.34375rem] desk:tracking-[0.315em] desk:text-[max(10.5px,0.78125rem)]">SPACES<br>PEOPLE<br>POSSIBILITIES</p>
+      <span class="hidden desk:block desk:absolute desk:right-[3.375rem] desk:top-[6.4375rem] desk:h-[3.25rem] desk:w-[0.125rem] desk:bg-[#7b8489]"></span>
+
+      <div class="mt-auto flex flex-col pt-16 short:pt-2 desk:contents">
+        <p class="short:hidden m-0 text-[11px] font-normal leading-[1.9] tracking-[0.3em] text-white/85 desk:absolute desk:left-[4.125rem] desk:leading-[1.34375rem] desk:tracking-[0.36em] desk:top-[calc(50%_-_16.59375rem)] desk:text-[#384753] desk:text-[max(10.5px,0.78125rem)]">VISUAL &amp; DIGITAL STUDIO<br>FOR REAL ESTATE</p>
+
+        <h1 class="m-0 mt-4 font-['Hanken_Grotesk',sans-serif] text-[min(10vw,88px)] short:text-[min(8vw,13dvh)] font-light leading-[0.98] tracking-[-0.02em] text-white desk:absolute desk:left-[0rem] desk:mt-0 desk:h-[12.125rem] desk:w-[50rem] desk:text-[6.69375rem] desk:leading-[6.0625rem] desk:top-[calc(50%_-_10.15625rem)]">
+          <span class="desk:absolute desk:left-[4.0625rem] desk:top-[0rem] desk:tracking-[-0.1525rem]">Real</span>
+          <span class="desk:absolute desk:left-[17.875rem] desk:top-[0rem] desk:tracking-[-0.20375rem]">estate,</span>
+          <br class="desk:hidden">
+          <span class="desk:absolute desk:left-[4.125rem] desk:top-[6.0625rem] desk:tracking-[-0.15625rem]">seen</span>
+          <span class="desk:absolute desk:left-[19.0625rem] desk:top-[6.0625rem] desk:tracking-[-0.25625rem]">differently.</span>
+        </h1>
+
+        <p class="m-0 mt-5 short:mt-2 max-w-[30ch] short:max-w-none font-['Hanken_Grotesk',sans-serif] text-[clamp(19px,4.8vw,30px)] font-light leading-[1.35] text-white desk:absolute desk:left-[0rem] desk:mt-0 desk:h-[2.5rem] desk:w-[50rem] desk:max-w-none desk:text-[1.875rem] desk:leading-[2.5rem] desk:top-[calc(50%_+_3.21875rem)]">
+          <span class="desk:absolute desk:left-[4.0625rem] desk:top-[0rem] desk:tracking-[-0.0275rem]">Digital</span>
+          <span class="desk:absolute desk:left-[9.8125rem] desk:top-[0rem] desk:tracking-[0.0375rem]">presence</span>
+          <span class="desk:absolute desk:left-[18.375rem] desk:top-[0rem] desk:tracking-[-0.099375rem]">for</span>
+          <span class="desk:absolute desk:left-[21.1875rem] desk:top-[0rem] desk:tracking-[0.004375rem]">properties</span>
+          <span class="desk:absolute desk:left-[30.5625rem] desk:top-[0rem] desk:tracking-[-0.0375rem]">worth</span>
+          <span class="desk:absolute desk:left-[35.875rem] desk:top-[0rem] desk:tracking-[0.04375rem]">noticing.</span>
+        </p>
+
+        <div class="mt-8 short:mt-3 flex flex-wrap gap-3 desk:contents">
+          <a href="#work" class="relative flex h-[52px] min-w-[200px] flex-1 items-center justify-between gap-4 rounded-[4px] bg-white px-5 text-[#111] sm:flex-none sm:px-6 desk:absolute desk:left-[4.125rem] desk:h-[3.5625rem] desk:w-[14.75rem] desk:min-w-0 desk:flex-none desk:justify-start desk:px-0 desk:top-[calc(50%_+_8.09375rem)]">
+            <span class="text-[13px] font-medium leading-[20px] tracking-[0.14em] desk:absolute desk:left-[1.625rem] desk:text-[max(11px,0.875rem)]">VIEW OUR WORK</span>
+            <svg class="h-[9px] w-[16px] shrink-0 desk:absolute desk:left-[12.0625rem] desk:top-[1.5625rem]" viewBox="0 0 16 9" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 4.5H15M10.5 0.5l4.5 4-4.5 4"/></svg>
+          </a>
+          <a href="#contact" class="relative flex h-[52px] min-w-[200px] flex-1 items-center justify-between gap-4 border border-white/80 px-5 text-white sm:flex-none sm:px-6 desk:absolute desk:left-[20.375rem] desk:h-[3.5625rem] desk:w-[14.6875rem] desk:min-w-0 desk:flex-none desk:justify-start desk:px-0 desk:top-[calc(50%_+_8.09375rem)]">
+            <span class="text-[13px] font-medium leading-[20px] tracking-[0.115em] desk:absolute desk:left-[1.5rem] desk:text-[max(11px,0.875rem)]">START A PROJECT</span>
+            <svg class="h-[9px] w-[16px] shrink-0 desk:absolute desk:left-[12.0625rem] desk:top-[1.5625rem]" viewBox="0 0 16 9" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M0 4.5H15M10.5 0.5l4.5 4-4.5 4"/></svg>
+          </a>
+        </div>
+
+        <p class="short:hidden m-0 mt-8 text-[11px] font-normal leading-[1.9] text-white/90 desk:absolute desk:left-[4.0625rem] desk:bottom-[8.5625rem] desk:mt-0 desk:leading-[1.34375rem] desk:text-white desk:text-[max(10.5px,0.78125rem)]"><span class="tracking-[0.2em] desk:block desk:tracking-[0.341em]">TRUSTED BY PROPERTY OWNERS,</span> <span class="tracking-[0.2em] desk:block desk:tracking-[0.342em]">REALTORS AND HOSPITALITY BRANDS.</span></p>
+      </div>
+
+      <div class="hidden desk:contents" aria-hidden="true">
+        <div class="desk:block desk:absolute desk:right-[3.875rem] desk:bottom-[15.5625rem] desk:h-[1.5rem] desk:w-[0.125rem] desk:bg-white/55"></div>
+        <p class="m-0 desk:absolute desk:right-[2.75rem] desk:bottom-[13rem] desk:w-[2.5rem] desk:text-center desk:text-[1.25rem] desk:font-normal desk:leading-[1.5rem] desk:tracking-[0.05em] desk:text-white">01</p>
+        <div class="desk:block desk:absolute desk:right-[3.875rem] desk:bottom-[10.375rem] desk:h-[1.875rem] desk:w-[0.125rem] desk:bg-white/55"></div>
+        <p class="m-0 desk:absolute desk:right-[2.75rem] desk:bottom-[8.625rem] desk:w-[2.5rem] desk:text-center desk:text-[0.75rem] desk:font-normal desk:leading-[1rem] desk:tracking-[0.1em] desk:text-white">03</p>
+      </div>
+
+      <div class="mt-6 short:mt-3 flex items-center gap-3 desk:contents">
+        <svg class="h-[18px] w-[16px] shrink-0 desk:absolute desk:left-[4.125rem] desk:bottom-[2.875rem] desk:h-[1.25rem] desk:w-[1.125rem]" viewBox="0 0 18 20" fill="currentColor" aria-hidden="true"><path d="M0 0L18 10 0 20Z"/></svg>
+        <p class="m-0 shrink-0 text-[13px] font-normal leading-[20px] tracking-[0.06em] text-white desk:absolute desk:left-[6.625rem] desk:bottom-[2.875rem] desk:text-[0.875rem]">0:00 / 0:30</p>
+        <div class="relative h-[3px] min-w-0 flex-1 bg-white/60 desk:absolute desk:left-[12.8125rem] desk:right-[12.375rem] desk:bottom-[3.4375rem] desk:h-[0.1875rem] desk:w-auto desk:flex-none"><div class="h-full w-[6.86%] bg-white"></div></div>
+        <svg class="h-[20px] w-[24px] shrink-0 desk:absolute desk:right-[7.9375rem] desk:bottom-[2.8125rem] desk:h-[1.375rem] desk:w-[1.625rem]" viewBox="0 0 26 22" fill="currentColor" aria-hidden="true"><path d="M0 7h5l8-6v20l-8-6H0Z"/><path d="M18 8l6 6M24 8l-6 6" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+        <svg class="h-[16px] w-[17px] shrink-0 desk:absolute desk:right-[3.4375rem] desk:bottom-[2.9375rem] desk:h-[1.125rem] desk:w-[1.1875rem]" viewBox="0 0 19 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M0 5.5V0h5.5M13.5 0H19v5.5M19 12.5V18h-5.5M5.5 18H0v-5.5"/></svg>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

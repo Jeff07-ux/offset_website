@@ -14,6 +14,7 @@ export interface GalleryItem {
   title: string;
   category: string;
   image: string;
+  thumb?: string;
   caption: string;
   duration?: string;
   aspect?: string;

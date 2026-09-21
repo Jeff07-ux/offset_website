@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Desktop (>=1100px) is the 1672x941 screenshot comp, scaled to fit the viewport (the smaller of width and height): 1rem = 16 comp-px at 1672x941.
+   Below 1100px the page runs its own stacked, mobile-first layout at a normal 16px root. */
+/* Landscape phones: short viewport below the desktop breakpoint. */
+@custom-variant short (@media (max-height: 520px) and (max-width: 1099px));
+
+@theme {
+  --breakpoint-desk: 68.75rem;
+}
+
+@layer base {
+  @media (min-width: 1100px) {
+    html {
+      font-size: min(calc(100vw * 16 / 1672), calc(100dvh * 16 / 941));
+    }
+  }
+}

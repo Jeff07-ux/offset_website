@@ -1,0 +1,24 @@
+{
+  "name": "aliyah-prestige",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i src/input.css -o dist/output.css",
+    "watch:css": "tailwindcss -i src/input.css -o dist/output.css --watch",
+    "compare": "node tools/compare.mjs",
+    "sample": "node tools/sample.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "pixelmatch": "^7.2.0",
+    "playwright": "^1.63.0",
+    "pngjs": "^7.0.0",
+    "tailwindcss": "^4.3.3"
+  }
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aliyah Prestige</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="m-0 bg-[#f5efe7] font-['Inter',sans-serif] antialiased">
+
+  <!-- SECTION: home-hero  (reference: refs/home-hero.png) -->
+  <!-- Hero photo derived from refs/home-hero.png with text removed (tools/make-hero-bg.mjs). Replace assets/hero-bg.png with the original photo when available. -->
+  <section id="home-hero" class="relative isolate overflow-hidden bg-[#1a0d05] text-white desk:h-[22.875rem] desk:border-x-[0.125rem] desk:border-t-[0.0625rem] desk:border-[#202020]">
+    <img src="assets/hero-bg.png" alt="" class="absolute inset-0 -z-20 size-full object-cover object-[65%_center] desk:object-cover">
+    <div class="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(15,8,3,.6)_0%,rgba(15,8,3,.35)_38%,rgba(15,8,3,.78)_100%)] desk:hidden"></div>
+
+    <div class="relative mx-auto flex min-h-[38.75rem] w-full max-w-[68.75rem] flex-col px-6 pb-14 pt-5 sm:px-10 desk:block desk:h-full desk:min-h-0 desk:max-w-[53.5rem] desk:p-0">
+      <header class="flex flex-wrap items-center justify-between gap-y-3 desk:absolute desk:inset-x-0 desk:top-0 desk:block desk:h-[3.25rem]">
+        <a href="#home-hero" class="block whitespace-nowrap text-center desk:absolute desk:left-[4.875rem] desk:top-[0.3125rem] desk:w-[8.25rem]">
+          <svg class="mx-auto block size-[0.875rem] text-[#e8d7b0] desk:size-[0.75rem]" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width=".8" aria-hidden="true"><path d="M6 0.5 7.6 4.4 11.5 6 7.6 7.6 6 11.5 4.4 7.6 0.5 6 4.4 4.4Z"/><circle cx="6" cy="6" r="1.6"/></svg>
+          <span class="mt-[0.1875rem] block font-['Cormorant_Garamond',serif] text-[1.0625rem] font-normal leading-[1.125rem] tracking-[0.12em] text-[#f3ece0] desk:text-[0.8125rem] desk:leading-[0.875rem] desk:tracking-[0.1em]">ALIYAH PRESTIGE</span>
+          <span class="mt-[0.25rem] block text-[0.4375rem] leading-[0.5rem] tracking-[0.16em] text-[#e6d8c0] desk:text-[0.3125rem] desk:leading-[0.375rem] desk:tracking-[0.14em]">PRIVATE CONCIERGE MARRAKECH</span>
+        </a>
+        <a href="#home-hero" class="flex h-[2.25rem] items-center justify-center gap-[0.5rem] rounded-full border border-white/55 px-[1rem] text-[0.625rem] font-medium leading-[0.75rem] tracking-[0.12em] text-[#f5eee4] transition-colors hover:bg-white/10 desk:absolute desk:left-[44.25rem] desk:top-[0.875rem] desk:h-[1.5rem] desk:w-[5.3125rem] desk:px-0 desk:text-[0.375rem] desk:leading-[0.5rem]">ENQUIRE NOW <span aria-hidden="true">→</span></a>
+        <nav aria-label="Main" class="-mx-1 flex w-full justify-between gap-[0.875rem] overflow-x-auto px-1 pb-1 text-[0.625rem] leading-[0.875rem] tracking-[0.1em] text-[#f5eee4] desk:contents desk:text-[0.375rem] desk:leading-[0.5rem]">
+          <a href="index.html" class="shrink-0 desk:absolute desk:left-[17.375rem] desk:top-[1.375rem]">HOME</a>
+          <a href="#home-hero" class="relative shrink-0 desk:absolute desk:left-[19.875rem] desk:top-[1.375rem] desk:h-[0.5rem] desk:w-[3.625rem]"><span class="desk:absolute desk:left-0">ABOUT</span><span class="hidden desk:absolute desk:left-[0.1875rem] desk:block">EXPERIENCES</span></a>
+          <a href="#services-section" class="shrink-0 desk:absolute desk:left-[24.875rem] desk:top-[1.375rem]">SERVICES</a>
+          <a href="#home-hero" class="shrink-0 desk:absolute desk:left-[28.6875rem] desk:top-[1.375rem]">CONTACT</a>
+          <a href="blog.html" class="shrink-0 desk:absolute desk:left-[32.375rem] desk:top-[1.375rem]">BLOG</a>
+        </nav>
+      </header>
+
+      <div class="mt-auto pt-24 desk:absolute desk:left-[4.875rem] desk:top-[5.25rem] desk:mt-0 desk:p-0">
+        <p class="m-0 text-[0.625rem] leading-[0.75rem] tracking-[0.2em] text-[#e6d8c0] desk:text-[0.3125rem] desk:leading-[0.375rem]">SINCE 1986</p>
+        <p class="m-0 mt-[0.4375rem] hidden font-['Cormorant_Garamond',serif] text-[1.4375rem] font-normal leading-[1.625rem] tracking-[0.115em] text-[#f5eee4] desk:block">ALIYAH PRESTIGE</p>
+        <p class="m-0 mt-[0.4375rem] hidden text-[0.5rem] leading-[0.625rem] tracking-[0.48em] text-[#eadfcc] desk:block">PRIVATE CONCIERGE MARRAKECH</p>
+        <h1 class="m-0 mt-[0.875rem] font-['Cormorant_Garamond',serif] text-[clamp(1.75rem,9vw,2.875rem)] font-medium leading-[1.12] tracking-[0] text-[#f7f1e6] desk:mt-[1.0625rem] desk:text-[1.9125rem] desk:leading-[2.125rem]">A WORLD OF PRIVILEGE,<br>ROOTED IN EXCELLENCE</h1>
+        <p class="m-0 mt-[1.125rem] max-w-[36ch] text-[0.9375rem] font-light leading-[1.5rem] text-[#f0e8da] desk:mt-[0.5rem] desk:max-w-none desk:text-[0.54688rem] desk:leading-[0.875rem]">Bespoke experiences of rare elegance in Marrakech and beyond.<br class="hidden desk:inline"> With discretion, personalization and timeless sophistication,<br class="hidden desk:inline"> we turn your vision into unforgettable moments.</p>
+        <a href="#services-section" class="mt-[1.75rem] flex h-[2.875rem] w-[10.75rem] items-center justify-center gap-[0.625rem] rounded-full border border-white/60 text-[0.6875rem] font-medium leading-[0.875rem] tracking-[0.12em] text-[#f5eee4] transition-colors hover:bg-white/10 desk:mt-[1.0625rem] desk:h-[1.5rem] desk:w-[6.375rem] desk:text-[0.375rem] desk:leading-[0.5rem]">ENQUIRE NOW <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: services-section  (reference: refs/services-section.png) -->
+  <section id="services-section" class="relative overflow-hidden bg-[#f5efe7] px-5 py-[3.5rem] sm:px-8 desk:h-[28.17961rem] desk:p-0">
+    <div class="relative mx-auto w-full max-w-[68.75rem] desk:h-full desk:max-w-[53.75rem]">
+      <header class="mb-[1.75rem] grid gap-[0.875rem] sm:grid-cols-[1fr_minmax(0,20rem)] sm:items-end desk:mb-0 desk:block">
+        <div>
+          <div class="flex items-center gap-[0.75rem] desk:contents">
+            <p class="m-0 font-['Jost',sans-serif] text-[0.6875rem] font-medium leading-[0.875rem] tracking-[0.2em] text-[#7a5643] desk:absolute desk:left-[1.69599rem] desk:top-[0.52184rem] desk:text-[0.48923rem] desk:leading-[0.65231rem] desk:tracking-[0.21em]">SIGNATURE SERVICES</p>
+            <span class="block h-px w-[2.25rem] bg-[#dfd0bd] desk:absolute desk:left-[9.06705rem] desk:top-[0.848rem] desk:w-[1.69599rem]" aria-hidden="true"></span>
+          </div>
+          <h2 class="m-0 mt-[0.875rem] font-['Cormorant_Garamond',serif] text-[clamp(1.875rem,8vw,2.625rem)] font-normal leading-[1.1] text-[#2f221c] desk:absolute desk:left-[1.69599rem] desk:top-[1.95692rem] desk:mt-0 desk:text-[1.63076rem] desk:leading-[1.69599rem]">Exceptional services,<br class="hidden desk:inline"> for extraordinary moments.</h2>
+        </div>
+        <p class="m-0 font-['Jost',sans-serif] text-[0.9375rem] leading-[1.5rem] text-[#6f6a65] desk:absolute desk:left-[30.59314rem] desk:top-[2.28307rem] desk:text-[0.54794rem] desk:leading-[0.93932rem] desk:tracking-[0.045em] desk:text-[#77726d]">From private jets to desert escapes, our concierge team<br class="hidden desk:inline"> curates seamless, bespoke experiences designed<br class="hidden desk:inline"> around your every desire.</p>
+      </header>
+      <ul class="m-0 grid list-none grid-cols-2 gap-[0.75rem] p-0 sm:gap-[1rem] mx-auto max-w-[38.75rem] desk:absolute desk:max-w-none desk:inset-0 desk:block">
+        <li class="relative aspect-[145/156] overflow-hidden rounded-[0.5rem] shadow-[0_1px_2px_rgba(60,35,20,.28)] desk:absolute desk:aspect-auto desk:rounded-[0.39138rem] desk:left-[1.50031rem] desk:top-[6.52306rem] desk:h-[10.17597rem] desk:w-[9.45844rem]">
+          <a href="#services-section" class="group block size-full text-[#efe8de]">
+            <img src="assets/service-01.png" alt="Private jet at sunset" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] desk:object-cover">
+            <span class="absolute inset-x-0 bottom-0 block px-[0.75rem] pb-[0.75rem] desk:inset-x-auto desk:bottom-auto desk:left-[0.848rem] desk:top-[6.58829rem] desk:p-0">
+              <span class="block font-['Cormorant_Garamond',serif] text-[0.6875rem] font-normal leading-[0.75rem] tracking-[0.04em] desk:text-[0.52184rem] desk:leading-[0.65231rem]">01.</span>
+              <h3 class="m-0 mt-[0.25rem] font-['Cormorant_Garamond',serif] text-[0.9375rem] font-normal leading-[1.125rem] desk:mt-[0.29354rem] desk:text-[0.79581rem] desk:leading-[0.91323rem]">Luxury Private<br class="hidden desk:inline"> Jet Charter</h3>
+            </span>
+          </a>
+        </li>
+        <li class="relative aspect-[145/156] overflow-hidden rounded-[0.5rem] shadow-[0_1px_2px_rgba(60,35,20,.28)] desk:absolute desk:aspect-auto desk:rounded-[0.39138rem] desk:left-[11.61104rem] desk:top-[6.52306rem] desk:h-[10.17597rem] desk:w-[9.78459rem]">
+          <a href="#services-section" class="group block size-full text-[#efe8de]">
+            <img src="assets/service-02.png" alt="Riad courtyard pool" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] desk:object-cover">
+            <span class="absolute inset-x-0 bottom-0 block px-[0.75rem] pb-[0.75rem] desk:inset-x-auto desk:bottom-auto desk:left-[0.848rem] desk:top-[6.58829rem] desk:p-0">
+              <span class="block font-['Cormorant_Garamond',serif] text-[0.6875rem] font-normal leading-[0.75rem] tracking-[0.04em] desk:text-[0.52184rem] desk:leading-[0.65231rem]">02.</span>
+              <h3 class="m-0 mt-[0.25rem] font-['Cormorant_Garamond',serif] text-[0.9375rem] font-normal leading-[1.125rem] desk:mt-[0.29354rem] desk:text-[0.79581rem] desk:leading-[0.91323rem]">Private Villas, Hotels<br class="hidden desk:inline"> &amp; Riads</h3>
+            </span>
+          </a>
+        </li>
+        <li class="relative aspect-[145/156] overflow-hidden rounded-[0.5rem] shadow-[0_1px_2px_rgba(60,35,20,.28)] desk:absolute desk:aspect-auto desk:rounded-[0.39138rem] desk:left-[21.98271rem] desk:top-[6.52306rem] desk:h-[10.17597rem] desk:w-[9.71936rem]">
+          <a href="#services-section" class="group block size-full text-[#efe8de]">
+            <img src="assets/service-03.png" alt="Chef plating a dish" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] desk:object-cover">
+            <span class="absolute inset-x-0 bottom-0 block px-[0.75rem] pb-[0.75rem] desk:inset-x-auto desk:bottom-auto desk:left-[0.848rem] desk:top-[6.58829rem] desk:p-0">
+              <span class="block font-['Cormorant_Garamond',serif] text-[0.6875rem] font-normal leading-[0.75rem] tracking-[0.04em] desk:text-[0.52184rem] desk:leading-[0.65231rem]">03.</span>
+              <h3 class="m-0 mt-[0.25rem] font-['Cormorant_Garamond',serif] text-[0.9375rem] font-normal leading-[1.125rem] desk:mt-[0.29354rem] desk:text-[0.79581rem] desk:leading-[0.91323rem]">Personal Chefs &amp;<br class="hidden desk:inline"> Gastronomy</h3>
+            </span>
+          </a>
+        </li>
+        <li class="relative aspect-[145/156] overflow-hidden rounded-[0.5rem] shadow-[0_1px_2px_rgba(60,35,20,.28)] desk:absolute desk:aspect-auto desk:rounded-[0.39138rem] desk:left-[32.28914rem] desk:top-[6.52306rem] desk:h-[10.17597rem] desk:w-[9.58889rem]">
+          <a href="#services-section" class="group block size-full text-[#efe8de]">
+            <img src="assets/service-04.png" alt="Wellness and spa terrace" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] desk:object-cover">
+            <span class="absolute inset-x-0 bottom-0 block px-[0.75rem] pb-[0.75rem] desk:inset-x-auto desk:bottom-auto desk:left-[0.848rem] desk:top-[6.58829rem] desk:p-0">
+              <span class="block font-['Cormorant_Garamond',serif] text-[0.6875rem] font-normal leading-[0.75rem] tracking-[0.04em] desk:text-[0.52184rem] desk:leading-[0.65231rem]">04.</span>
+              <h3 class="m-0 mt-[0.25rem] font-['Cormorant_Garamond',serif] text-[0.9375rem] font-normal leading-[1.125rem] desk:mt-[0.29354rem] desk:text-[0.79581rem] desk:leading-[0.91323rem]">Wellness &amp; Spa<br class="hidden desk:inline"> Rituals</h3>
+            </span>
+          </a>
+        </li>
+        <li class="relative aspect-[145/156] overflow-hidden rounded-[0.5rem] shadow-[0_1px_2px_rgba(60,35,20,.28)] desk:absolute desk:aspect-auto desk:rounded-[0.39138rem] desk:left-[42.53034rem] desk:top-[6.52306rem] desk:h-[10.17597rem] desk:w-[9.45844rem]">
+          <a href="#services-section" class="group block size-full text-[#efe8de]">
+            <img src="assets/service-05.png" alt="Cultural experience in a palace" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] desk:object-cover">
+            <span class="absolute inset-x-0 bottom-0 block px-[0.75rem] pb-[0.75rem] desk:inset-x-auto desk:bottom-auto desk:left-[0.848rem] desk:top-[6.58829rem] desk:p-0">
+              <span class="block font-['Cormorant_Garamond',serif] text-[0.6875rem] font-normal leading-[0.75rem] tracking-[0.04em] desk:text-[0.52184rem] desk:leading-[0.65231rem]">05.</span>
+              <h3 class="m-0 mt-[0.25rem] font-['Cormorant_Garamond',serif] text-[0.9375rem] font-normal leading-[1.125rem] desk:mt-[0.29354rem] desk:text-[0.79581rem] desk:leading-[0.91323rem]">Private Cultural<br class="hidden desk:inline"> Experiences</h3>
+            </span>
+          </a>
+        </li>
+        <li class="relative aspect-[145/156] overflow-hidden rounded-[0.5rem] shadow-[0_1px_2px_rgba(60,35,20,.28)] desk:absolute desk:aspect-auto desk:rounded-[0.39138rem] desk:left-[1.50031rem] desk:top-[17.48179rem] desk:h-[10.11074rem] desk:w-[9.45844rem]">
+          <a href="#services-section" class="group block size-full text-[#efe8de]">
+            <img src="assets/service-06.png" alt="Luxury events table setting" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] desk:object-cover">
+            <span class="absolute inset-x-0 bottom-0 block px-[0.75rem] pb-[0.75rem] desk:inset-x-auto desk:bottom-auto desk:left-[0.848rem] desk:top-[6.58829rem] desk:p-0">
+              <span class="block font-['Cormorant_Garamond',serif] text-[0.6875rem] font-normal leading-[0.75rem] tracking-[0.04em] desk:text-[0.52184rem] desk:leading-[0.65231rem]">06.</span>
+              <h3 class="m-0 mt-[0.25rem] font-['Cormorant_Garamond',serif] text-[0.9375rem] font-normal leading-[1.125rem] desk:mt-[0.29354rem] desk:text-[0.79581rem] desk:leading-[0.91323rem]">Luxury Events<br class="hidden desk:inline"> Planner</h3>
+            </span>
+          </a>
+        </li>
+        <li class="relative aspect-[145/156] overflow-hidden rounded-[0.5rem] shadow-[0_1px_2px_rgba(60,35,20,.28)] desk:absolute desk:aspect-auto desk:rounded-[0.39138rem] desk:left-[11.61104rem] desk:top-[17.48179rem] desk:h-[10.11074rem] desk:w-[9.78459rem]">
+          <a href="services.html" class="group block size-full text-[#efe8de]">
+            <img src="assets/service-07.png" alt="Chauffeur beside a luxury car" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] desk:object-cover">
+            <span class="absolute inset-x-0 bottom-0 block px-[0.75rem] pb-[0.75rem] desk:inset-x-auto desk:bottom-auto desk:left-[0.848rem] desk:top-[6.58829rem] desk:p-0">
+              <span class="block font-['Cormorant_Garamond',serif] text-[0.6875rem] font-normal leading-[0.75rem] tracking-[0.04em] desk:text-[0.52184rem] desk:leading-[0.65231rem]">07.</span>
+              <h3 class="m-0 mt-[0.25rem] font-['Cormorant_Garamond',serif] text-[0.9375rem] font-normal leading-[1.125rem] desk:mt-[0.29354rem] desk:text-[0.79581rem] desk:leading-[0.91323rem]">Luxury Transportation<br class="hidden desk:inline"> &amp; Chauffeurs</h3>
+            </span>
+          </a>
+        </li>
+        <li class="relative aspect-[145/156] overflow-hidden rounded-[0.5rem] shadow-[0_1px_2px_rgba(60,35,20,.28)] desk:absolute desk:aspect-auto desk:rounded-[0.39138rem] desk:left-[21.98271rem] desk:top-[17.48179rem] desk:h-[10.11074rem] desk:w-[9.71936rem]">
+          <a href="#services-section" class="group block size-full text-[#efe8de]">
+            <img src="assets/service-08.png" alt="Souk street in Marrakech" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] desk:object-cover">
+            <span class="absolute inset-x-0 bottom-0 block px-[0.75rem] pb-[0.75rem] desk:inset-x-auto desk:bottom-auto desk:left-[0.848rem] desk:top-[6.58829rem] desk:p-0">
+              <span class="block font-['Cormorant_Garamond',serif] text-[0.6875rem] font-normal leading-[0.75rem] tracking-[0.04em] desk:text-[0.52184rem] desk:leading-[0.65231rem]">08.</span>
+              <h3 class="m-0 mt-[0.25rem] font-['Cormorant_Garamond',serif] text-[0.9375rem] font-normal leading-[1.125rem] desk:mt-[0.29354rem] desk:text-[0.79581rem] desk:leading-[0.91323rem]">Private Souk Experience<br class="hidden desk:inline"> &amp; Personal Curation</h3>
+            </span>
+          </a>
+        </li>
+        <li class="relative aspect-[145/156] overflow-hidden rounded-[0.5rem] shadow-[0_1px_2px_rgba(60,35,20,.28)] desk:absolute desk:aspect-auto desk:rounded-[0.39138rem] desk:left-[32.28914rem] desk:top-[17.48179rem] desk:h-[10.11074rem] desk:w-[9.58889rem]">
+          <a href="#services-section" class="group block size-full text-[#efe8de]">
+            <img src="assets/service-09.png" alt="Desert dunes with a quad bike" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] desk:object-cover">
+            <span class="absolute inset-x-0 bottom-0 block px-[0.75rem] pb-[0.75rem] desk:inset-x-auto desk:bottom-auto desk:left-[0.848rem] desk:top-[6.58829rem] desk:p-0">
+              <span class="block font-['Cormorant_Garamond',serif] text-[0.6875rem] font-normal leading-[0.75rem] tracking-[0.04em] desk:text-[0.52184rem] desk:leading-[0.65231rem]">09.</span>
+              <h3 class="m-0 mt-[0.25rem] font-['Cormorant_Garamond',serif] text-[0.9375rem] font-normal leading-[1.125rem] desk:mt-[0.29354rem] desk:text-[0.79581rem] desk:leading-[0.91323rem]">Desert &amp; Atlas<br class="hidden desk:inline"> Escapes</h3>
+            </span>
+          </a>
+        </li>
+        <li class="relative aspect-[145/156] overflow-hidden rounded-[0.5rem] shadow-[0_1px_2px_rgba(60,35,20,.28)] desk:absolute desk:aspect-auto desk:rounded-[0.39138rem] desk:left-[42.53034rem] desk:top-[17.48179rem] desk:h-[10.11074rem] desk:w-[9.45844rem]">
+          <a href="#services-section" class="group block size-full text-[#efe8de]">
+            <img src="assets/service-10.png" alt="Discreet personal assistant at a door" class="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-[1.03] desk:object-cover">
+            <span class="absolute inset-x-0 bottom-0 block px-[0.75rem] pb-[0.75rem] desk:inset-x-auto desk:bottom-auto desk:left-[0.848rem] desk:top-[6.58829rem] desk:p-0">
+              <span class="block font-['Cormorant_Garamond',serif] text-[0.6875rem] font-normal leading-[0.75rem] tracking-[0.04em] desk:text-[0.52184rem] desk:leading-[0.65231rem]">10.</span>
+              <h3 class="m-0 mt-[0.25rem] font-['Cormorant_Garamond',serif] text-[0.9375rem] font-normal leading-[1.125rem] desk:mt-[0.29354rem] desk:text-[0.79581rem] desk:leading-[0.91323rem]">24/7 Discreet Personal<br class="hidden desk:inline"> Assistance</h3>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>

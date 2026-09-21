@@ -1,0 +1,62 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gray-on-color",
+        "value": "*",
+        "files": [
+          "**/offset-replica/index.html"
+        ],
+        "createdAt": "2026-09-21T12:04:16.881Z",
+        "reason": "fidelity: exact-replica task, values sampled from the reference mockup; detector measures against placeholder bg not the photo (assistant decision, not user-confirmed)"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "**/offset-replica/index.html"
+        ],
+        "createdAt": "2026-09-21T12:04:18.206Z",
+        "reason": "eyebrow tag is in the reference mockup and the task is an exact replica (assistant decision, not user-confirmed)"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "**/offset-replica/index.html"
+        ],
+        "createdAt": "2026-09-21T12:04:18.617Z",
+        "reason": "false positive: fixed absolutely-positioned comp over a photo, no padded text container"
+      },
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "**/offset-replica/index.html"
+        ],
+        "createdAt": "2026-09-21T12:04:19.006Z",
+        "reason": "tracking matches tracked-caps micro labels in the reference; detector misreads multi-line labels as body text"
+      },
+      {
+        "rule": "monotonous-spacing",
+        "value": "*",
+        "files": [
+          "**/offset-replica/index.html"
+        ],
+        "createdAt": "2026-09-21T12:04:19.601Z",
+        "reason": "false positive: absolute positioning with px offsets, no flow spacing"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "**/offset-replica/index.html"
+        ],
+        "createdAt": "2026-09-21T12:06:49.451Z",
+        "reason": "user confirmed: keep grey tag colours as in the mockup; findings have line 0 so no narrower scope exists"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "offset-replica",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:css": "tailwindcss -i src/input.css -o dist/output.css",
+    "watch:css": "tailwindcss -i src/input.css -o dist/output.css --watch",
+    "compare": "node tools/compare.mjs",
+    "sample": "node tools/sample.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "pixelmatch": "^7.2.0",
+    "playwright": "^1.63.0",
+    "pngjs": "^7.0.0",
+    "tailwindcss": "^4.3.3"
+  }
+}

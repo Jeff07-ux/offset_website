@@ -73,26 +73,36 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({
     { label: 'CONTACT', id: 'contact' },
   ];
 
+  // Over the hero the header stays minimal; everywhere else (scrolled or on inner pages) it shows the
+  // compact bar from the design sheet: slogan stack, cobalt CTA, and on desktop the sheet's exact placement.
+  const compact = !(theme === 'hero' && !scrolled);
+
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           scrolled
-            ? 'bg-white/95 backdrop-blur-md py-4 border-b border-[#C8C8C8]/60 shadow-xs'
+            ? 'bg-white/95 backdrop-blur-md py-4 lg:py-0'
             : 'bg-transparent py-6 sm:py-8'
-        }`}
+        } ${compact ? 'lg:u-h-85' : ''}`}
       >
-        <div className="w-full px-5 sm:px-10 lg:px-16 flex items-center justify-between">
+        <div
+          className={`w-full px-5 sm:px-10 flex items-center justify-between ${
+            compact ? 'lg:relative lg:block lg:h-full lg:px-0' : 'lg:px-16'
+          }`}
+        >
           {/* Brand Wordmark */}
           <a
             href="#"
             onClick={(e) => handleLinkClick(e, 'hero')}
-            className="group flex items-center select-none"
+            className={`group flex items-center select-none ${
+              compact ? 'lg:absolute lg:u-left-86 lg:u-top-24' : ''
+            }`}
             aria-label="OFFSET Studio Home"
           >
             <span
-              className={`text-2xl sm:text-3xl lg:text-[36px] font-normal tracking-[0.26em] uppercase leading-none transition-colors ${
-                theme === 'hero' && !scrolled ? 'text-[#090909]' : 'text-[#090909]'
+              className={`text-2xl sm:text-3xl font-normal tracking-[0.26em] uppercase leading-none text-[#090909] transition-colors ${
+                compact ? 'lg:u-text-28 lg:u-lh-32 lg:tracking-[0.13em]' : 'lg:text-[36px]'
               }`}
             >
               OFFSET
@@ -101,7 +111,9 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({
 
           {/* Desktop Navigation Links */}
           <nav
-            className="hidden md:flex items-center space-x-10 lg:space-x-16"
+            className={`hidden md:flex items-center space-x-10 lg:space-x-16 ${
+              compact ? 'lg:absolute lg:u-left-332 lg:u-top-30 lg:space-x-0! lg:gap-[calc(var(--u)*50)]' : ''
+            }`}
             aria-label="Primary Navigation"
           >
             {navLinks.map((link) => (
@@ -109,8 +121,10 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({
                 key={link.id}
                 href={`#${link.id}`}
                 onClick={(e) => handleLinkClick(e, link.id)}
-                className={`text-[12px] lg:text-[12px] font-medium tracking-nav uppercase transition-opacity duration-200 hover:opacity-60 relative py-1 ${
-                  theme === 'hero' && !scrolled ? 'text-[#090909]' : 'text-[#090909]'
+                className={`font-medium uppercase transition-opacity duration-200 hover:opacity-60 relative py-1 text-[#090909] ${
+                  compact
+                    ? 'text-[12px] tracking-nav lg:u-text-12.5 lg:u-lh-20 lg:py-0 lg:font-normal lg:tracking-normal'
+                    : 'text-[12px] tracking-nav'
                 }`}
               >
                 {link.label}
@@ -119,20 +133,23 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({
           </nav>
 
           {/* Right Action Rail: Slogan & Optional CTA & Hamburger */}
-          <div className="flex items-center space-x-6 lg:space-x-10">
-            {/* Editorial Slogan (Desktop) — hidden over the hero, which shows its own slogan rail */}
-            {!(theme === 'hero' && !scrolled) && (
-              <div className="hidden xl:flex items-center space-x-3 text-[11px] font-medium tracking-editorial uppercase text-[#747474] select-none">
-                <span>{slogan.join(' / ')}</span>
-              </div>
+          <div className={`flex items-center space-x-6 lg:space-x-10 ${compact ? 'lg:contents' : ''}`}>
+            {/* Editorial slogan stack with its short rule — hidden over the hero, which shows its own slogan rail */}
+            {compact && (
+              <>
+                <div className="hidden lg:block lg:absolute lg:u-left-1247 lg:u-top-19 select-none text-[11px] font-medium tracking-editorial uppercase text-[#727274] lg:u-text-11 lg:u-lh-17 lg:tracking-[0.28em] lg:whitespace-pre-line">
+                  {slogan.join('\n')}
+                </div>
+                <span className="hidden lg:block lg:absolute lg:u-left-1344 lg:u-top-43 lg:u-w-34 lg:u-h-1 bg-[#a4a4a5]" />
+              </>
             )}
 
             {/* CTA Button — hidden over the hero to match its clean unscrolled header */}
-            {showCta && !(theme === 'hero' && !scrolled) && (
+            {showCta && compact && (
               <button
                 type="button"
                 onClick={onContactClick || ((e) => handleLinkClick(e as any, 'contact'))}
-                className="hidden sm:inline-flex items-center justify-center space-x-2 bg-[#17B8C2] hover:bg-[#149da6] text-[#090909] font-medium text-[12px] uppercase tracking-button px-5 py-2.5 transition-all duration-200 cursor-pointer active:scale-[0.98] select-none"
+                className="hidden sm:inline-flex items-center justify-center space-x-2 bg-[#052DC8] hover:bg-[#0424a1] text-white font-medium text-[12px] uppercase tracking-button px-5 py-2.5 transition-all duration-200 cursor-pointer active:scale-[0.98] select-none lg:absolute lg:u-left-1431 lg:u-top-18 lg:u-w-158 lg:u-h-50 lg:px-0 lg:space-x-3 lg:u-text-12.5 lg:tracking-[0.22em]"
               >
                 <span>LET’S TALK</span>
                 <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} />
@@ -212,7 +229,7 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-[#17B8C2] text-[#090909] font-medium text-sm tracking-button uppercase px-8 py-4 cursor-pointer"
+              className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-[#052DC8] text-white font-medium text-sm tracking-button uppercase px-8 py-4 cursor-pointer"
             >
               <span>LET’S TALK</span>
               <ArrowRight className="w-4 h-4" strokeWidth={1.5} />

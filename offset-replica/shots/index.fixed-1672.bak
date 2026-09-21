@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1672">
+  <title>OFFSET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=Hanken+Grotesk:wght@300;400;500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="m-0 bg-white font-['Hanken_Grotesk',sans-serif] antialiased">
+
+  <!-- SECTION: hero  (reference: refs/sheet-1.png, 1672x941) -->
+  <!-- Background photo derived from the reference with UI erased (tools/make-hero-bg.mjs). Replace assets/hero-bg.png with the original photo/video when available. -->
+  <section id="hero" class="relative isolate h-[941px] w-[1672px] overflow-hidden bg-[#386f96] text-white">
+    <img src="assets/hero-bg.png" alt="" class="absolute inset-0 -z-10 size-full object-cover">
+
+    <header>
+      <a href="#hero" class="absolute left-[53px] top-[29px] font-['Jost',sans-serif] text-[40px] font-normal leading-[60px] tracking-[0.335em] text-[#181c1c]">OFFSET</a>
+      <nav aria-label="Main">
+        <a href="#work" class="absolute left-[575px] top-[48px] text-[15px] font-normal leading-[20px] tracking-[0.175em] text-[#152328]">WORK</a>
+        <a href="#services" class="absolute left-[697px] top-[48px] text-[15px] font-normal leading-[20px] tracking-[0.175em] text-[#152328]">SERVICES</a>
+        <a href="#about" class="absolute left-[854px] top-[48px] text-[15px] font-normal leading-[20px] tracking-[0.175em] text-[#152328]">ABOUT</a>
+        <a href="#contact" class="absolute left-[988px] top-[48px] text-[15px] font-normal leading-[20px] tracking-[0.175em] text-[#152328]">CONTACT</a>
+      </nav>
+      <button type="button" aria-label="Menu" class="absolute left-[1583px] top-[47px] block h-[22px] w-[34px] cursor-pointer border-0 bg-transparent p-0">
+        <span class="absolute left-0 top-[2px] h-[2px] w-[33px] bg-[#1a1e20]"></span>
+        <span class="absolute left-0 top-[10px] h-[2px] w-[33px] bg-[#1a1e20]"></span>
+        <span class="absolute left-0 top-[19px] h-[2px] w-[33px] bg-[#1a1e20]"></span>
+      </button>
+    </header>
+
+    <p class="absolute left-[1462px] top-[98px] m-0 text-[12.5px] font-normal leading-[21.5px] tracking-[0.315em] text-[#5a5e62]">SPACES<br>PEOPLE<br>POSSIBILITIES</p>
+    <span class="absolute left-[1616px] top-[103px] h-[52px] w-[2px] bg-[#7b8489]"></span>
+
+    <p class="absolute left-[66px] top-[205px] m-0 text-[12.5px] font-normal leading-[21.5px] tracking-[0.36em] text-[#384753]">VISUAL &amp; DIGITAL STUDIO<br>FOR REAL ESTATE</p>
+
+    <h1 class="absolute left-0 top-[308px] m-0 h-[194px] w-[800px] font-['Hanken_Grotesk',sans-serif] text-[107.1px] font-light leading-[97px] text-white">
+      <span class="absolute left-[65px] top-0 tracking-[-2.44px]">Real</span>
+      <span class="absolute left-[286px] top-0 tracking-[-3.26px]">estate,</span>
+      <span class="absolute left-[66px] top-[97px] tracking-[-2.5px]">seen</span>
+      <span class="absolute left-[305px] top-[97px] tracking-[-4.1px]">differently.</span>
+    </h1>
+
+    <p class="absolute left-0 top-[522px] m-0 h-[40px] w-[800px] font-['Hanken_Grotesk',sans-serif] text-[30px] font-light leading-[40px] text-white">
+      <span class="absolute left-[65px] top-0 tracking-[-0.44px]">Digital</span>
+      <span class="absolute left-[157px] top-0 tracking-[0.6px]">presence</span>
+      <span class="absolute left-[294px] top-0 tracking-[-1.59px]">for</span>
+      <span class="absolute left-[339px] top-0 tracking-[0.07px]">properties</span>
+      <span class="absolute left-[489px] top-0 tracking-[-0.6px]">worth</span>
+      <span class="absolute left-[574px] top-0 tracking-[0.7px]">noticing.</span>
+    </p>
+
+    <a href="#work" class="absolute left-[66px] top-[600px] flex h-[57px] w-[236px] items-center rounded-[4px] bg-white text-[#111]">
+      <span class="absolute left-[26px] text-[14px] font-medium leading-[20px] tracking-[0.14em]">VIEW OUR WORK</span>
+      <svg class="absolute left-[193px] top-[25px] h-[9px] w-[16px]" viewBox="0 0 16 9" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 4.5H15M10.5 0.5l4.5 4-4.5 4"/></svg>
+    </a>
+    <a href="#contact" class="absolute left-[326px] top-[600px] flex h-[57px] w-[235px] items-center border border-white/80 text-white">
+      <span class="absolute left-[24px] text-[14px] font-medium leading-[20px] tracking-[0.115em]">START A PROJECT</span>
+      <svg class="absolute left-[193px] top-[25px] h-[9px] w-[16px]" viewBox="0 0 16 9" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 4.5H15M10.5 0.5l4.5 4-4.5 4"/></svg>
+    </a>
+
+    <p class="absolute left-[65px] top-[761px] m-0 text-[12.5px] font-normal leading-[21.5px] text-white"><span class="block tracking-[0.341em]">TRUSTED BY PROPERTY OWNERS,</span><span class="block tracking-[0.342em]">REALTORS AND HOSPITALITY BRANDS.</span></p>
+
+    <div class="absolute left-[1608px] top-[668px] h-[24px] w-[2px] bg-white/55"></div>
+    <p class="absolute left-[1588px] top-[709px] m-0 w-[40px] text-center text-[20px] font-normal leading-[24px] tracking-[0.05em] text-white">01</p>
+    <div class="absolute left-[1608px] top-[745px] h-[30px] w-[2px] bg-white/55"></div>
+    <p class="absolute left-[1588px] top-[787px] m-0 w-[40px] text-center text-[12px] font-normal leading-[16px] tracking-[0.1em] text-white">03</p>
+
+    <svg class="absolute left-[66px] top-[875px] h-[20px] w-[18px]" viewBox="0 0 18 20" fill="currentColor" aria-hidden="true"><path d="M0 0L18 10 0 20Z"/></svg>
+    <p class="absolute left-[106px] top-[875px] m-0 text-[14px] font-normal leading-[20px] tracking-[0.06em] text-white">0:00 / 0:30</p>
+    <div class="absolute left-[205px] top-[883px] h-[3px] w-[1269px] bg-white/60"></div>
+    <div class="absolute left-[205px] top-[883px] h-[3px] w-[87px] bg-white"></div>
+    <svg class="absolute left-[1519px] top-[874px] h-[22px] w-[26px]" viewBox="0 0 26 22" fill="currentColor" aria-hidden="true"><path d="M0 7h5l8-6v20l-8-6H0Z"/><path d="M18 8l6 6M24 8l-6 6" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+    <svg class="absolute left-[1598px] top-[876px] h-[18px] w-[19px]" viewBox="0 0 19 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M0 5.5V0h5.5M13.5 0H19v5.5M19 12.5V18h-5.5M5.5 18H0v-5.5"/></svg>
+  </section>
+
+</body>
+</html>

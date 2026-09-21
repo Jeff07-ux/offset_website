@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aliyah Prestige</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="m-0 bg-[#f5efe6] font-['Inter',sans-serif] antialiased">
+
+  <!-- SECTION: home-hero  (reference: refs/home-hero.png) -->
+  <!-- Hero photo derived from refs/home-hero.png with text removed (tools/make-hero-bg.mjs). Replace assets/hero-bg.png with the original photo when available. -->
+  <section id="home-hero" class="relative h-[366px] w-full overflow-hidden border-x-2 border-t border-[#202020] bg-[#1a0d05] text-white">
+    <img src="assets/hero-bg.png" alt="" class="absolute inset-0 size-full object-fill">
+
+    <header class="absolute inset-x-0 top-0 h-[52px]">
+      <a href="#home-hero" class="absolute left-[78px] top-[5px] block w-[132px] whitespace-nowrap text-center">
+        <svg class="mx-auto block size-[12px] text-[#e8d7b0]" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width=".8" aria-hidden="true"><path d="M6 0.5 7.6 4.4 11.5 6 7.6 7.6 6 11.5 4.4 7.6 0.5 6 4.4 4.4Z"/><circle cx="6" cy="6" r="1.6"/></svg>
+        <span class="mt-[3px] block font-['Cormorant_Garamond',serif] text-[13px] font-normal leading-[14px] tracking-[0.1em] text-[#f3ece0]">ALIYAH PRESTIGE</span>
+        <span class="mt-[4px] block text-[5px] leading-[6px] tracking-[0.14em] text-[#e6d8c0]">PRIVATE CONCIERGE MARRAKECH</span>
+      </a>
+      <nav aria-label="Main" class="text-[6px] leading-[8px] tracking-[0.12em] text-[#f5eee4]">
+        <a href="#home-hero" class="absolute left-[278px] top-[22px]">HOME</a>
+        <a href="#home-hero" class="absolute left-[318px] top-[22px] h-[8px] w-[58px]"><span class="absolute left-0">ABOUT</span><span class="absolute left-[3px]">EXPERIENCES</span></a>
+        <a href="#services-section" class="absolute left-[398px] top-[22px]">SERVICES</a>
+        <a href="#home-hero" class="absolute left-[459px] top-[22px]">CONTACT</a>
+        <a href="#home-hero" class="absolute left-[518px] top-[22px]">BLOG</a>
+      </nav>
+      <a href="#home-hero" class="absolute left-[708px] top-[14px] flex h-[24px] w-[85px] items-center justify-center gap-[8px] rounded-full border border-white/55 text-[6px] font-medium leading-[8px] tracking-[0.12em] text-[#f5eee4]">ENQUIRE NOW <span aria-hidden="true">→</span></a>
+    </header>
+
+    <div class="absolute left-[78px] top-[84px]">
+      <p class="m-0 text-[5px] leading-[6px] tracking-[0.2em] text-[#e6d8c0]">SINCE 1986</p>
+      <p class="m-0 mt-[7px] font-['Cormorant_Garamond',serif] text-[23px] font-normal leading-[26px] tracking-[0.115em] text-[#f5eee4]">ALIYAH PRESTIGE</p>
+      <p class="m-0 mt-[7px] text-[8px] leading-[10px] tracking-[0.48em] text-[#eadfcc]">PRIVATE CONCIERGE MARRAKECH</p>
+      <h1 class="m-0 mt-[17px] font-['Cormorant_Garamond',serif] text-[30.6px] font-medium leading-[34px] tracking-[0] text-[#f7f1e6]">A WORLD OF PRIVILEGE,<br>ROOTED IN EXCELLENCE</h1>
+      <p class="m-0 mt-[8px] text-[8.75px] font-light leading-[14px] text-[#f0e8da]">Bespoke experiences of rare elegance in Marrakech and beyond.<br>With discretion, personalization and timeless sophistication,<br>we turn your vision into unforgettable moments.</p>
+      <a href="#services-section" class="mt-[17px] flex h-[24px] w-[102px] items-center justify-center gap-[10px] rounded-full border border-white/60 text-[6px] font-medium leading-[8px] tracking-[0.12em] text-[#f5eee4]">ENQUIRE NOW <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- SECTION: services-section  (reference: refs/services-section.png) -->
+  <section id="services-section" class="relative h-[432px] w-full overflow-hidden bg-[#f5efe7]">
+    <header>
+      <p class="absolute left-[26px] top-[8px] m-0 font-['Jost',sans-serif] text-[7.5px] font-medium leading-[10px] tracking-[0.21em] text-[#7a5643]">SIGNATURE SERVICES</p>
+      <span class="absolute left-[139px] top-[13px] block h-px w-[26px] bg-[#dfd0bd]" aria-hidden="true"></span>
+      <h2 class="absolute left-[26px] top-[30px] m-0 font-['Cormorant_Garamond',serif] text-[25px] font-normal leading-[26px] text-[#2f221c]">Exceptional services,<br>for extraordinary moments.</h2>
+      <p class="absolute left-[469px] top-[35px] m-0 font-['Jost',sans-serif] text-[8.4px] leading-[14.4px] tracking-[0.045em] text-[#77726d]">From private jets to desert escapes, our concierge team<br>curates seamless, bespoke experiences designed<br>around your every desire.</p>
+    </header>
+    <ul class="m-0 list-none p-0">
+      <li class="absolute overflow-hidden rounded-[6px] shadow-[0_1px_2px_rgba(60,35,20,.28)]" style="left:23px;top:100px;width:145px;height:156px">
+        <a href="#services-section" class="block size-full text-[#efe8de]">
+          <img src="assets/service-01.png" alt="Private jet at sunset" class="absolute inset-0 size-full object-fill">
+          <span class="absolute left-[13px] top-[101px] block font-['Cormorant_Garamond',serif] text-[8px] font-normal leading-[10px] tracking-[0.04em]">01.</span>
+          <h3 class="absolute left-[13px] top-[115.5px] m-0 font-['Cormorant_Garamond',serif] text-[12.2px] font-normal leading-[14px]">Luxury Private<br>Jet Charter</h3>
+        </a>
+      </li>
+      <li class="absolute overflow-hidden rounded-[6px] shadow-[0_1px_2px_rgba(60,35,20,.28)]" style="left:178px;top:100px;width:150px;height:156px">
+        <a href="#services-section" class="block size-full text-[#efe8de]">
+          <img src="assets/service-02.png" alt="Riad courtyard pool" class="absolute inset-0 size-full object-fill">
+          <span class="absolute left-[13px] top-[101px] block font-['Cormorant_Garamond',serif] text-[8px] font-normal leading-[10px] tracking-[0.04em]">02.</span>
+          <h3 class="absolute left-[13px] top-[115.5px] m-0 font-['Cormorant_Garamond',serif] text-[12.2px] font-normal leading-[14px]">Private Villas, Hotels<br>&amp; Riads</h3>
+        </a>
+      </li>
+      <li class="absolute overflow-hidden rounded-[6px] shadow-[0_1px_2px_rgba(60,35,20,.28)]" style="left:337px;top:100px;width:149px;height:156px">
+        <a href="#services-section" class="block size-full text-[#efe8de]">
+          <img src="assets/service-03.png" alt="Chef plating a dish" class="absolute inset-0 size-full object-fill">
+          <span class="absolute left-[13px] top-[101px] block font-['Cormorant_Garamond',serif] text-[8px] font-normal leading-[10px] tracking-[0.04em]">03.</span>
+          <h3 class="absolute left-[13px] top-[115.5px] m-0 font-['Cormorant_Garamond',serif] text-[12.2px] font-normal leading-[14px]">Personal Chefs &amp;<br>Gastronomy</h3>
+        </a>
+      </li>
+      <li class="absolute overflow-hidden rounded-[6px] shadow-[0_1px_2px_rgba(60,35,20,.28)]" style="left:495px;top:100px;width:147px;height:156px">
+        <a href="#services-section" class="block size-full text-[#efe8de]">
+          <img src="assets/service-04.png" alt="Wellness and spa terrace" class="absolute inset-0 size-full object-fill">
+          <span class="absolute left-[13px] top-[101px] block font-['Cormorant_Garamond',serif] text-[8px] font-normal leading-[10px] tracking-[0.04em]">04.</span>
+          <h3 class="absolute left-[13px] top-[115.5px] m-0 font-['Cormorant_Garamond',serif] text-[12.2px] font-normal leading-[14px]">Wellness &amp; Spa<br>Rituals</h3>
+        </a>
+      </li>
+      <li class="absolute overflow-hidden rounded-[6px] shadow-[0_1px_2px_rgba(60,35,20,.28)]" style="left:652px;top:100px;width:145px;height:156px">
+        <a href="#services-section" class="block size-full text-[#efe8de]">
+          <img src="assets/service-05.png" alt="Cultural experience in a palace" class="absolute inset-0 size-full object-fill">
+          <span class="absolute left-[13px] top-[101px] block font-['Cormorant_Garamond',serif] text-[8px] font-normal leading-[10px] tracking-[0.04em]">05.</span>
+          <h3 class="absolute left-[13px] top-[115.5px] m-0 font-['Cormorant_Garamond',serif] text-[12.2px] font-normal leading-[14px]">Private Cultural<br>Experiences</h3>
+        </a>
+      </li>
+      <li class="absolute overflow-hidden rounded-[6px] shadow-[0_1px_2px_rgba(60,35,20,.28)]" style="left:23px;top:268px;width:145px;height:155px">
+        <a href="#services-section" class="block size-full text-[#efe8de]">
+          <img src="assets/service-06.png" alt="Luxury events table setting" class="absolute inset-0 size-full object-fill">
+          <span class="absolute left-[13px] top-[101px] block font-['Cormorant_Garamond',serif] text-[8px] font-normal leading-[10px] tracking-[0.04em]">06.</span>
+          <h3 class="absolute left-[13px] top-[115.5px] m-0 font-['Cormorant_Garamond',serif] text-[12.2px] font-normal leading-[14px]">Luxury Events<br>Planner</h3>
+        </a>
+      </li>
+      <li class="absolute overflow-hidden rounded-[6px] shadow-[0_1px_2px_rgba(60,35,20,.28)]" style="left:178px;top:268px;width:150px;height:155px">
+        <a href="#services-section" class="block size-full text-[#efe8de]">
+          <img src="assets/service-07.png" alt="Chauffeur beside a luxury car" class="absolute inset-0 size-full object-fill">
+          <span class="absolute left-[13px] top-[101px] block font-['Cormorant_Garamond',serif] text-[8px] font-normal leading-[10px] tracking-[0.04em]">07.</span>
+          <h3 class="absolute left-[13px] top-[115.5px] m-0 font-['Cormorant_Garamond',serif] text-[12.2px] font-normal leading-[14px]">Luxury Transportation<br>&amp; Chauffeurs</h3>
+        </a>
+      </li>
+      <li class="absolute overflow-hidden rounded-[6px] shadow-[0_1px_2px_rgba(60,35,20,.28)]" style="left:337px;top:268px;width:149px;height:155px">
+        <a href="#services-section" class="block size-full text-[#efe8de]">
+          <img src="assets/service-08.png" alt="Souk street in Marrakech" class="absolute inset-0 size-full object-fill">
+          <span class="absolute left-[13px] top-[101px] block font-['Cormorant_Garamond',serif] text-[8px] font-normal leading-[10px] tracking-[0.04em]">08.</span>
+          <h3 class="absolute left-[13px] top-[115.5px] m-0 font-['Cormorant_Garamond',serif] text-[12.2px] font-normal leading-[14px]">Private Souk Experience<br>&amp; Personal Curation</h3>
+        </a>
+      </li>
+      <li class="absolute overflow-hidden rounded-[6px] shadow-[0_1px_2px_rgba(60,35,20,.28)]" style="left:495px;top:268px;width:147px;height:155px">
+        <a href="#services-section" class="block size-full text-[#efe8de]">
+          <img src="assets/service-09.png" alt="Desert dunes with a quad bike" class="absolute inset-0 size-full object-fill">
+          <span class="absolute left-[13px] top-[101px] block font-['Cormorant_Garamond',serif] text-[8px] font-normal leading-[10px] tracking-[0.04em]">09.</span>
+          <h3 class="absolute left-[13px] top-[115.5px] m-0 font-['Cormorant_Garamond',serif] text-[12.2px] font-normal leading-[14px]">Desert &amp; Atlas<br>Escapes</h3>
+        </a>
+      </li>
+      <li class="absolute overflow-hidden rounded-[6px] shadow-[0_1px_2px_rgba(60,35,20,.28)]" style="left:652px;top:268px;width:145px;height:155px">
+        <a href="#services-section" class="block size-full text-[#efe8de]">
+          <img src="assets/service-10.png" alt="Discreet personal assistant at a door" class="absolute inset-0 size-full object-fill">
+          <span class="absolute left-[13px] top-[101px] block font-['Cormorant_Garamond',serif] text-[8px] font-normal leading-[10px] tracking-[0.04em]">10.</span>
+          <h3 class="absolute left-[13px] top-[115.5px] m-0 font-['Cormorant_Garamond',serif] text-[12.2px] font-normal leading-[14px]">24/7 Discreet Personal<br>Assistance</h3>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+</body>
+</html>

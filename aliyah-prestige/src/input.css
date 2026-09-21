@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Desktop layouts are the screenshot comps, scaled with the viewport: 1rem = 16 comp-px at the comp width.
+   Home page: comp 860px, `desk:` variant from 800px.
+   Journal page (html.jn): comp 730px, `jn:` variant from 720px.
+   Services page (html.sv): comp 720px, `sv:` variant from 720px.
+   Below the breakpoint each page runs its mobile-first layout at a normal 16px root. */
+@theme {
+  --breakpoint-desk: 50rem;
+  --breakpoint-jn: 45rem;
+  --breakpoint-sv: 45rem;
+}
+
+@layer base {
+  @media (min-width: 800px) {
+    html:not(.jn):not(.sv) {
+      font-size: min(calc(100vw * 16 / 860), 1.875rem);
+    }
+  }
+  @media (min-width: 720px) {
+    html.jn {
+      font-size: min(calc(100vw * 16 / 730), 1.875rem);
+    }
+    html.sv {
+      font-size: min(calc(100vw * 16 / 720), 1.875rem);
+    }
+  }
+}
